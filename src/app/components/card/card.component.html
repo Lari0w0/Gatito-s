@@ -1,0 +1,15 @@
+<div class="game">
+    <div class="game__card">
+        <div class="game__card__GameScreen">
+            <img 
+            class="game__card__GameScreen__image"
+            [src]="'../../../assets/imagens/' + GameScreen + '.png'"
+            [attr.GameScreen]="GameScreen">
+        </div>
+    </div>
+    <div class="game__title" [ngClass]="{
+        'classeDark': themeService.getDarkTheme,
+        'classeLight': !themeService.getDarkTheme,}">
+    {{ NameGame }}
+    </div>
+</div>

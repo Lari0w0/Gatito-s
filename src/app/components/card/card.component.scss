@@ -1,0 +1,56 @@
+@import "../../../styles/variables";
+
+
+.game {
+    &__card {
+        height: 220px;
+        width: 380px;
+        background-color: $colorP;
+        border-radius: 20px;
+        margin-bottom: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 3px 3px #11111144;
+        overflow: hidden;
+        
+        &__GameScreen {
+            &__image {
+                height: 100%;
+                width: 100%;
+                transform: translateY(-10%);
+            }
+        }
+    }
+    
+    &__title {
+        height: 60px;
+        background-color: $color1DM;
+        border-radius: 10px;
+        font-family: $secondFont;
+        color: #fff;
+        letter-spacing: 2px;
+        font-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    transition: 0.5s ease;
+    
+    &:hover{
+        // width: 22vw;
+    }
+    
+}
+.classeLight {
+    background-color: $color1LM;
+}
+
+    @media (max-width: 1468px) {
+        .game {
+            &__card {
+                height: 180px;
+                width: 300px;
+            }
+        }
+    }

@@ -1,0 +1,57 @@
+@import "../../../styles/variables";
+.header {
+    background-color: $color1DM;
+    display: flex;
+    align-items: center;
+    height: 160px;
+    &__navbar {
+        width: 100%;
+    }
+}
+
+// navbar
+
+.bottom-wrapper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    &__title {
+        font-family: $secondFont;
+        color: $colorP;
+        margin-right: 40px;
+        letter-spacing: 1.7px;
+        font-size: 36px;
+        margin-bottom: 3px;
+    }
+    &__switch {
+        margin-right: 2%;
+    }
+}
+.input {
+    display: flex;
+    justify-content: end;
+    margin: 1.5%;
+    &__element {
+        height: 40px;
+        width: 80%;
+        border: 0;
+        border-radius: 30px;
+        background-color: $color2DM;
+        color: #fff;
+        font-size: 18px;
+        padding: 20px;
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.541);
+            font-size: 18px;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}
+.classeDark {
+    background-color: $color1DM;
+}
+.classeLight {
+    background-color: $color1LM;
+}

@@ -1,0 +1,31 @@
+<header class="header" [ngClass]="{
+    'classeDark': themeService.getDarkTheme,
+    'classeLight': !themeService.getDarkTheme,
+}">
+    <!-- CHAMAR COMPONENTE DE IMAGEM (ESQUERDA) -->
+    <div class="header__logo">
+        <app-logo></app-logo>
+    </div>
+    <!-- CHAMAR COMPONENTE (DIREITA) -->
+    <div class="header__navbar">
+            <div class="input">
+                <input
+                type="text"
+                class="input__element"
+                placeholder="Pesquisar"
+                >
+                <div class="input__box">
+                    <!-- estrutura caixa de pesquisa -->
+                </div>
+            </div>
+            <div class="bottom-wrapper">
+                <a href="#footer">
+                    <h2 class="bottom-wrapper__title">Créditos</h2>
+                </a>
+                <div class="bottom-wrapper__switch">
+                    <app-switch></app-switch>
+                </div>
+            </div>
+        </div>
+</header>
+

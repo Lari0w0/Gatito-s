@@ -1,0 +1,38 @@
+<div class="container" [ngClass]="{
+        'classeDark': themeService.getDarkTheme,
+        'classeLight': !themeService.getDarkTheme,
+    }">
+    <ng-container *ngIf="gameService.getGameState; then game; else home"></ng-container>
+
+<ng-template #home class="header">
+    <div class="cards">
+            <div class="cards__card"> 
+                    <app-card 
+                    (click)="gameSelected()" [GameScreen]="'JumpRunner'"
+                    NameGame='JumpRunner'></app-card>
+            </div>
+            <div class="cards__card">
+                <app-card></app-card>
+            </div>
+            <div class="cards__card">
+                <app-card></app-card>
+            </div>
+            <div class="cards__card">
+                <app-card></app-card>
+            </div>
+            <div class="cards__card">
+                <app-card></app-card>
+            </div>
+            <div class="cards__card">
+                <app-card></app-card>
+            </div>
+    </div>
+</ng-template>
+<ng-template #game>
+        <div class="game-content">
+            <div class="game">
+                <app-jump-runer></app-jump-runer>
+            </div>
+        </div>
+</ng-template>
+</div>

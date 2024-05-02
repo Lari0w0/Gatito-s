@@ -1,0 +1,10 @@
+<div class="switch__container">
+    <input
+    id="switc-shadow"
+    class="switch switch--shadow"
+    type="checkbox"
+    [ngModel]="darkThemeService.getDarkTheme"
+    (ngModelChange)="onSwitchChange($event)"
+    >
+    <label for="switc-shadow"></label>
+</div>

@@ -1,0 +1,18 @@
+@import "../variables";
+
+.gtt-c-app {
+    width: 100%;
+    height: 100vh;
+
+    &__content {
+        height: 100%;
+    }
+
+    &--theme--dm {
+        background-color: $color2DM;
+    }
+
+    &--theme--lm {
+        background-color: $color2LM;
+    }
+}

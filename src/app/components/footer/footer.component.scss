@@ -1,0 +1,37 @@
+@import "../../../styles/variables";
+
+.content {
+    position: absolute;
+    width: 100%;
+    background-color: $color1DM;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        color: $colorP;
+        font-family: $secondFont;
+        letter-spacing: 1.7px;
+        font-size: 20px;
+        margin-top: 1.5%;
+    }
+    &__icons {
+        display: flex;
+        &__icon{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 30px 10px 30px;
+            &__github, &__behance {
+                font-size: 30px;
+                margin: 50px;
+                color: white;
+            }
+        }
+    }
+}
+
+.classeLight {
+    background-color: $color1LM;
+}

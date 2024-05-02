@@ -1,0 +1,31 @@
+<div class="content" id="footer" [ngClass]="{
+    'classeDark': themeService.getDarkTheme,
+    'classeLight': !themeService.getDarkTheme,
+}">
+    <a href="#" class="content__title">
+        <h1>Créditos</h1>
+    </a>
+    <p>Desenvolvido por Larissa Santos e com o auxílio dos universitários Gustavo Stolze</p>
+    
+    <div class="content__icons">
+        <div class="content__icons__icon">
+            <a href="https://github.com/gustavo-stolze" target=”_blank>
+                <fa-icon [icon]="github" class="content__icons__icon__github"></fa-icon>
+            </a>
+            <a href="https://github.com/gustavo-stolze" target=”_blank>gustavo-stolze</a>
+        </div>
+        <div class="content__icons__icon">
+            <a href="https://github.com/Lari0w0" target=”_blank>
+                <fa-icon [icon]="github" class="content__icons__icon__github"></fa-icon>
+            </a>
+            <a href="https://github.com/Lari0w0" target=”_blank>Lari0w0</a>
+        </div>
+        <div class="content__icons__icon">
+            <a href="https://www.behance.net/larica_" target=”_blank>
+                <fa-icon [icon]="Behance" class="content__icons__icon__github"></fa-icon>
+            </a>
+            <a href="https://www.behance.net/larica_" target=”_blank>Larissa Santos</a>
+        </div>
+    </div>
+</div>
+
